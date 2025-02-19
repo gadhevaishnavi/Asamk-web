@@ -1,0 +1,73 @@
+/* Discover Section */
+.discover {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Product Card */
+.discover div {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.discover div:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Product Image */
+.discover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Content Overlay */
+.discover div h3,
+.discover div p {
+  position: absolute;
+  color: #ffffff;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Product Title Styling */
+.discover div h3 {
+  bottom: 50px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Product Description Styling */
+.discover div p {
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Overlay Effect */
+.discover div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay on image */
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.discover div:hover::before {
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+}

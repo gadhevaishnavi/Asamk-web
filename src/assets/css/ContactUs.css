@@ -1,0 +1,67 @@
+/* src/assets/css/ContactUs.css */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.form img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 30px auto 0;
+}
+
+.form p:last-child {
+  margin-bottom: 0;
+}
+
+/* Add responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .form h1 {
+    font-size: 1.8rem;
+  }
+
+  .form p {
+    font-size: 0.95rem;
+  }
+}

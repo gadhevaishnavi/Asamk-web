@@ -1,0 +1,90 @@
+.image-counter-overlay {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.counter-item {
+  text-align: center;
+  color: #fff;
+}
+
+.counter-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.counter-title {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* Larger Tablets and Smaller Desktops */
+@media (max-width: 1024px) {
+  .image-counter-overlay {
+    height: 350px; /* Adjust height for tablets */
+  }
+
+  .counter-number {
+    font-size: 1.8rem; /* Slightly reduce font size */
+  }
+
+  .counter-title {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .image-counter-overlay {
+    height: 300px;
+  }
+
+  .counter-number {
+    font-size: 1.6rem; /* Further reduce font size */
+  }
+
+  .counter-title {
+    font-size: 0.8rem;
+  }
+
+  .overlay-content {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .image-counter-overlay {
+    height: 250px; /* Smaller height for smaller devices */
+  }
+
+  .counter-number {
+    font-size: 1.4rem; /* Reduce number size */
+  }
+
+  .counter-title {
+    font-size: 0.7rem; /* Reduce title size */
+  }
+
+  .overlay-content {
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Smaller gap */
+    padding: 10px; /* Reduce padding further */
+  }
+}

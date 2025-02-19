@@ -1,0 +1,70 @@
+.advantage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+  background-color: #f9f9f9; /* Light background for the container */
+}
+
+.products_card {
+  background-color: #fff; /* White background for each card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Ensure child elements are clipped to the rounded corners */
+  text-align: center; /* Center-align content */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.products_card img {
+  width: 100%; /* Full-width image */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Crop image to fit */
+  border-bottom: 1px solid #eaeaea; /* Separate image from content */
+}
+
+.products_card h4 {
+  font-size: 18px;
+  color: #333;
+  margin: 15px 0 5px; /* Spacing for heading */
+  font-weight: bold;
+}
+
+.products_card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px; /* Spacing below title */
+}
+
+.products_card button {
+  background-color: #5dade2; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Rounded button corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 15px; /* Space below button */
+  transition: background-color 0.3s ease;
+}
+
+.products_card button:hover {
+  background-color: #3498db; /* Darker shade on hover */
+}
+
+.products_card:hover {
+  transform: translateY(-8px); /* Slight upward movement on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .advantage {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .advantage {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+}
+

@@ -1,0 +1,69 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Contact Details Styling */
+.contact-details {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.95); /* Light background with slight transparency */
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Smooth shadow for depth */
+  max-width: 340px;
+  z-index: 2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Heading Styles */
+.contact-details h2 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 2px solid #007BFF; /* Blue underline */
+  padding-bottom: 5px;
+}
+
+.contact-details h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #007BFF;
+}
+
+/* Paragraph Styles */
+.contact-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Email Link Styling */
+.contact-details a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .contact-details {
+    top: auto;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 90%;
+    max-width: 90%;
+  }
+}

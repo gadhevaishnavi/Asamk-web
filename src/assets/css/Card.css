@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Carousel Slider */
+.home_slider img {
+  width: 100%;
+  height: 500px;
+  /* object-fit:fill; */
+  
+}
+
+.slider_text h3 {
+  font-size: 2rem;
+  color: white;
+ 
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.card-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-container h2 {
+  margin: 10px 0;
+  position: absolute; /* Position title on top of the image */
+  bottom: 40%; /* Adjust vertical placement */
+  text-align: center;
+  font-size: 1.5rem;
+  color:#fff;
+  margin-left: 150px;
+}
+
+/* CSS for the seafood section */
+.seafood {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 800px; /* Limit the width */
+  margin: 20px auto; /* Center align with margin */
+}
+
+.seafood .heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a557f; /* Deep blue for the heading */
+  margin-bottom: 10px;
+}
+
+.seafood p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555; /* Subtle gray for text */
+  margin-bottom: 20px;
+}
+
+.seafood-img {
+  width: 100%;
+  max-width: 400px; /* Set a maximum size for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
+}
