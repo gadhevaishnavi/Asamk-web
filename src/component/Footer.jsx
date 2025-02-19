@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/css/Footer.css";
 import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
-import logo from "../assets/images/Logo.png";
+import logo from "../assets/images/logo.png";
 import img1 from '../assets/images/slider1.jpeg';
 import { NavLink } from "react-router-dom";
 
